@@ -1,0 +1,98 @@
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightseagreen;
+    }
+
+    header {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .info-wrapper {
+        flex-grow: 1;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        
+    }
+
+    .project-info {
+        height: 100%;
+        width: 50%;
+    }
+
+    .project-thumbnail {
+        height: 100%;
+        width: 50%;
+        object-fit: contain;
+    }
+    .get-in-touch {
+        height: 500px;
+    }
+
+    .contact-form {
+        width: 55%;
+        float: left;
+    }
+
+    .map {
+        width: 45%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-color: lightslategray;
+    }
+
+    header {
+        padding: 1rem 5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-wrapper ul {
+        display: flex;
+        align-self: center;
+    }
+
+    .nav-wrapper {
+        flex-grow: 1;
+        align-self: center;
+    }
+
+    nav {
+        flex-direction: row-reverse;
+    }
+
+    nav {
+        background-color: brown;
+    }
+
+
+    .project-card {
+        display: flex;
+        width: 45%;
+    }
+
+    .contact-form {
+        width: 55%;
+        float: left;
+    }
+
+    .map {
+        width: 40%;
+        float: right;
+    }
+
+}
+
+

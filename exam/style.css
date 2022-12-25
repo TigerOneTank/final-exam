@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@400;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: grey;
+}
+
+.logo {
+    background-color: #222222;
+    padding: 1rem;
+}   
+
+.logo:hover .logo-name {
+    color: #22A39F;
+}
+
+.logo-name {
+    color: burlywood;
+    font-weight: 900;
+}
+
+.colors {
+    color: palevioletred;
+}
+
+.logo-quote {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.info-wrapper {
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    padding: 1rem;
+    color: whitesmoke;
+
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+ion-icon {
+    font-size: 3.2rem;
+    color: #C3CEBD
+}
+
+.info-detail {
+    color: #22A39F;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+header {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-now,
+.menu {
+    font-size: 2rem;
+    font-weight: 800;
+
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu {
+    color: whitesmoke;
+    background-color: black;
+}
+
+.nav-wrapper {
+    padding: 1rem;
+}
+
+.nav-wrapper ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+
+    display: none;
+}
+
+.nav-wrapper ul li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-wrapper ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.banner {
+    height: 600px;
+    background-color: white;
+    background-image: url(images/gaming.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.save {
+    padding: 1rem 2rem;
+    background-color: #F65C51;
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    width: fit-content;
+
+    border-radius: 30px 0 30px 0;
+}
+
+.slogan {
+    font-size: 4.8rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+.quote {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.btn {
+    color: whitesmoke;
+    background-color: #472183;
+    border: none;
+    padding: 1rem 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.btn .arrow {
+    transition: all 250ms;
+}
+
+.btn:hover .arrow {
+    margin-left: 2rem;
+}
+
+.project-card {
+    width: 90%;
+    height: 600px;
+    background-color: lavenderblush;
+    border-radius: 1rem;
+    border: 2px solid white;
+}
+
+.project-thumbnail {
+    height: 50%;
+}
+
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+
+.catergory {
+    background-color: rgba(9, 153, 52, 0.25);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: gray;
+}
+
+.buy-btn .arrow {
+    transition: all 250ms;
+}
+
+.buy-btn:hover .arrow {
+    margin-left: 2rem;
+}
+
+project-title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.project-desc {
+    color: gray;
+    font-size: 1.4rem;
+}
+
+.progressbar {
+    width: 100%;
+    background-color: lightgray;
+    height: 20px;
+    border-radius: 15px;
+}
+
+.progress-value {
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    background-color: darkcyan;
+    color: white;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twentyfive {
+    width: 25%;
+}
+
+.fifty {
+    width: 50%;
+}
+
+.seventyfive {
+    width: 75%;
+}
+
+.money {
+    color: rosybrown;
+    font-weight: 700;
+}
+
+.raised {
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-info {
+    height: 50%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-info .btn {
+    align-self: flex-end;
+}
+
+.cards-wrapper {
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.image-container {
+    display: none;
+}
+
+.option {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.option ion-icon {
+    font-size: 32px;
+
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 0 50px 50px 50px;
+}
+
+.option h3 {
+    color: whitesmoke;
+}
+
+.option-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.volunteer-info {
+    padding: 2rem;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slogan {
+    border-right: 4px solid whitesmoke;
+    overflow: hidden;
+    white-space: nowrap;
+
+    animation: blink 1s infinite, typing 5s steps(20) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: whitesmoke;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+.guest-card {
+    width: 300px;
+    height: 400px;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #808080 0%, #E0C3FC 100%);
+
+    box-shadow: 5px 5px 2px red, 10px 10px 2px green ,15px 15px 2px blue;
+
+    text-align: center;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: all 500ms;
+  }
+
+.guest-card:hover {
+    box-shadow: 0px 0px 0px black;
+}
+
+.guest-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid dimgray;
+}
+
+.guest-card h4 {
+    font-size: 20px;
+}
+
+.guest-card p {
+    font-size: 16px;
+  }
+
+.guest-card-wrapper {
+    padding: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+
+
+.purchase {
+    background-color: orangered;
+    text-align: center;
+}
+
+.credit-card {
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #0066cc;
+    margin-bottom: 5px;
+}
+
+.row {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+.btn-buy {
+    color: whitesmoke;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+    padding: 1rem 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+.btn-buy:hover {
+    background-color: whitesmoke;
+    color: black;
+
+    transition: all 1000ms;
+}
+
+
+label, input {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    background-color:#ffcc00;
+}
+
+label {
+    text-align: left;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn-buy .purchasing {
+    transition: all 250ms;
+}
+
+.btn-buy:hover .purchasing {
+    color: black;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.map {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+
+.footer {
+    clear: both;
+    height: 200px;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
